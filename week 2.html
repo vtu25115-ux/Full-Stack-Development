@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" class="gender"> Male
+        <input type="radio" name="gender" value="Female" class="gender"> Female
+        <input type="radio" name="gender" value="Other" class="gender"> Other
+        <br><br>
+
+        <label>Course:</label>
+        <select name="course">
+            <option value="BCA">BCA</option>
+            <option value="BSc">BSc</option>
+            <option value="BCom">BCom</option>
+            <option value="BTech">BTech</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address" rows="3"></textarea>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
