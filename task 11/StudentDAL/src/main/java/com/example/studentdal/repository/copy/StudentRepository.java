@@ -1,0 +1,18 @@
+package com.example.studentdal.repository.copy;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.studentdal.model.Student;
+
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+
+    List<Student> findByDepartment(String department);
+
+    List<Student> findByAge(int age);
+
+    List<Student> findByAgeGreaterThan(int age);
+
+    List<Student> findByDepartmentAndAge(String department, int age);
+}
